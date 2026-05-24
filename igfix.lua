@@ -460,22 +460,53 @@ execBtn.MouseButton1Click:Connect(function()
 
     local code = selectedData.code
 
-    if selectedData.url then
+if selectedData.url then
 
-        setStatus("⏳ Downloading Script...", C.accent)
+    setStatus("⏳ Downloading Script...", C.accent)
 
-        local success, result = pcall(function()
-            return HttpService:GetAsync(selectedData.url, true)
-        end)
+    print("========== HTTP DEBUG ==========")
+    print("Request URL:")
+    print(selectedData.url)
 
-        if not success then
+    local success, result = pcall(function()
+        return HttpService:GetAsync(selectedData.url)
+    end)
+
+    print("Request Success:", success)
+
+    if not success then
+
+        print("FULL ERROR:")
+        warn(result)
+
+        if tostring(result):find("Trust check failed") then
+            setStatus("❌ Trust Check Failed", C.red)
+
+        elseif tostring(result):find("Http requests are not enabled") then
+            setStatus("❌ Enable HTTP Requests", C.red)
+
+        elseif tostring(result):find("404") then
+            setStatus("❌ 404 Not Found", C.red)
+
+        else
             setStatus("❌ HTTP Failed", C.red)
-            warn(result)
-            return
         end
 
-        code = result
+        return
     end
+
+    print("========== RESPONSE ==========")
+    print(result)
+
+    if result == "" or result == nil then
+        setStatus("❌ Empty Response", C.red)
+        return
+    end
+
+    code = result
+
+    print("========== END DEBUG ==========")
+end
 
     runCode(code)
 end)
