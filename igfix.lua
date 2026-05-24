@@ -78,7 +78,7 @@ local Scripts = {
         description = "Loads remote script",
         category    = "Remote",
 
-        url = "https://raw.githubusercontent.com/apexontopfr/Popittt/refs/heads/main/Po"
+        url = "https://raw.githubusercontent.com/apexontopfr/Popittt/main/Po"
     },
 }
 
