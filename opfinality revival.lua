@@ -549,7 +549,7 @@ G2L["33"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]
 G2L["33"]["TextColor3"] = Color3.fromRGB(236, 241, 241);
 G2L["33"]["BackgroundTransparency"] = 1;
 G2L["33"]["Size"] = UDim2.new(0.659, 0, 0.31955, 0);
-G2L["33"]["Text"] = [[This script was originally coded by illremember, used in FE games. Because of roblox patching exploits, many have been added or removed.]];
+G2L["33"]["Text"] = [[im a very skid so i skid - notpreston]];
 G2L["33"]["Name"] = [[OPFin_Warning]];
 G2L["33"]["Position"] = UDim2.new(0.02272, 0, 0.63673, 0);
 
@@ -561,7 +561,7 @@ G2L["34"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["34"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Italic);
 G2L["34"]["BackgroundTransparency"] = 1;
 G2L["34"]["Size"] = UDim2.new(0.79535, 0, 0.2274, 0);
-G2L["34"]["Text"] = [[This game is Filtering Enabled! Enjoy using OPFinality]];
+G2L["34"]["Text"] = [[This game has Filtering Enabled! Enjoy using Tungfinality]];
 G2L["34"]["Name"] = [[Text_FE_ENABLED]];
 G2L["34"]["Position"] = UDim2.new(0.159, 0, 0.067, 0);
 
@@ -573,7 +573,7 @@ G2L["35"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["35"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["35"]["BackgroundTransparency"] = 1;
 G2L["35"]["Size"] = UDim2.new(0.52266, 0, 0.13644, 0);
-G2L["35"]["Text"] = [[What is OPFinality Revived?]];
+G2L["35"]["Text"] = [[What is Tungfinality Revived?]];
 G2L["35"]["Name"] = [[WhatIsOPFinality]];
 G2L["35"]["Position"] = UDim2.new(0.24997, 0, 0.2274, 0);
 
